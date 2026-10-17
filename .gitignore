@@ -1,0 +1,6 @@
+headershot
+headershot.exe
+*.exe
+dist/
+result*.txt
+result*.json

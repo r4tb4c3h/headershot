@@ -14,24 +14,15 @@ Requires Go 1.20+.
 ```bash
 go install github.com/r4tb4c3h/headershot@latest
 ```
+```if cannot with @latest
+go install github.com/r4tb4c3h/headershot@main
+```
 
 The binary lands in `$(go env GOPATH)/bin` (Windows: `%USERPROFILE%\\go\\bin`).
 Make sure that folder is in your `PATH`, then simply run:
 
 ```bash
 headershot -h
-```
-
-Add to PATH:
-
-```powershell
-# Windows (PowerShell, then reopen the terminal)
-\[Environment]::SetEnvironmentVariable("Path", \[Environment]::GetEnvironmentVariable("Path","User") + ";$env:USERPROFILE\\go\\bin", "User")
-```
-
-```bash
-# Linux / macOS (put in \~/.bashrc or \~/.zshrc)
-export PATH=$PATH:$(go env GOPATH)/bin
 ```
 
 ## Usage

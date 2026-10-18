@@ -14,13 +14,12 @@ Requires Go 1.20+.
 ```bash
 go install github.com/r4tb4c3h/headershot@latest
 ```
-```if cannot with @latest
+OR (if cannot use @latest)
+```bash
 go install github.com/r4tb4c3h/headershot@main
 ```
 
-The binary lands in `$(go env GOPATH)/bin` (Windows: `%USERPROFILE%\\go\\bin`).
-Make sure that folder is in your `PATH`, then simply run:
-
+Verification :
 ```bash
 headershot -h
 ```
